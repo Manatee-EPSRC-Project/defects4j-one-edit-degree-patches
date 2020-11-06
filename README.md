@@ -10,7 +10,7 @@ The patches are in the ARJA format. All of them are one-edit degree patches (i.e
 Faulty:\
 return result;\
 Seed:\
-int hash=37;\
+int hash=37;
 
 In case of the Delete operation, the seed is ignored. Another patch of the same bug, Patch_10, removes three lines, from 1789 to 1791, in file AbstractCategoryItemRenderer.java and inserts line "Shape box=null;" at that position instead.
 
@@ -20,7 +20,7 @@ if (dataset != null) {\
   return result;\
 }\
 Seed:\
-Shape box=null;\
+Shape box=null;
 
 As the patches in the ARJA format cannot be applied directly to the source code, they have been converted to the diff format by the Perl script available at https://github.com/pdziurzanski/arja2diff-patch-converter. That repository also includes the converted versions of these patches.
 
